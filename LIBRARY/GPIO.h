@@ -52,6 +52,7 @@ public:
 	void output_settings(OUTPUT_Type type, OUTPUT_Speed speed);
 	void digital_write(bool value);
 	bool digital_read(void) const;
+	void toggle();
 
 	~_GPIO();
 };

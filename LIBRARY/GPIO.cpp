@@ -136,6 +136,9 @@ bool _GPIO::digital_read(void)const{
 	return false;
 }
 
+void _GPIO::toggle(){
+	GPIO->ODR ^= (1<<PIN);	
+}
 _GPIO::~_GPIO() {
 	// TODO Auto-generated destructor stub
 }
